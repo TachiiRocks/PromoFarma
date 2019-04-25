@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+    
+*
+    font-family: 'Open Sans', sans-serif
+
+.home
+    background: white
+    height: 800px
+    &__products
+        margin-left: 15px
+        margin-right: 15px
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+        &-name
+            max-width: 195px
+        &-carting
+            display: flex
+            justify-content: space-around
+            margin-top: 5px
+            display: flex
+            align-items: center
+        &-price
+            margin-right: 10px
+            &--noadd
+                color: rgb(204,204,204)
+        &-car
+            &--add
+                background: rgb(140,191,0)
+                border-radius: 3px
+                height: 40px
+                width: 90px
+            &--noadd
+                background: rgb(204,204,204)
+                border-radius: 3px
+                height: 40px
+                width: 90px
+            &-img
+                margin-left: 16px
+                height: 27px
+                width: 50px
+                margin-top: 7px
+    &__cart
+        position: fixed
+        bottom:0px
+        margin-left: 0px
+        width: 100%
+        box-shadow: 1px 1px 8px 4px rgba(201,201,201,1)
+        &-trolley
+            color: rgb(140,191,0)
+            border-bottom: 2px solid rgb(140,191,0)
+            &-paragraph
+                margin-left: 10px
+        &-total
+            display: flex
+            justify-content: space-between
+            margin-left: 10px
+            &-products
+            &-price
+                margin-right: 10px
+        &-products
+            display: none
+        &-price
+            display: flex
+
+@media (min-width: 600px)
+    .home
+        display: flex
+        padding: 30px
+        margin-left: 50px
+        &__products
+            max-width: 500px
+            &-name
+                min-width: 300px
+            &-carting
+                margin-top: 0px
+        &__cart
+            min-width: 500px
+            height: unset
+            margin: auto
+            position: unset
+            bottom: unset
+            width: unset
+            margin-bottom: 650px
+            margin-right: 120px
+            border-radius: 3px
+            &-trolley
+                &-paragraph
+                    margin-left: 10px
+            &-products
+                display: flex
+                margin-left: 20px
+                margin-top: 15px
+                margin-right: 15px
+                margin-bottom: 15px
+                border-bottom: 1px solid #e1e1e1
+                &-name
+                    width: 200px
+                    margin-left: 20px
+                &-img
+                    border: 1px solid rgb(204,204,204)
+                    height: 60px
+                    &-image
+                        width: 80px
+                        height: 60px
+                &-price
+                    margin-left: 200px

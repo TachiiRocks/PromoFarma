@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.home {
+  background: white;
+  height: 800px;
+}
+.home__products {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home__products-name {
+  max-width: 195px;
+}
+.home__products-carting {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.home__products-price {
+  margin-right: 10px;
+}
+.home__products-price--noadd {
+  color: #cccccc;
+}
+.home__products-car--add {
+  background: #8cbf00;
+  border-radius: 3px;
+  height: 40px;
+  width: 90px;
+}
+.home__products-car--noadd {
+  background: #cccccc;
+  border-radius: 3px;
+  height: 40px;
+  width: 90px;
+}
+.home__products-car-img {
+  margin-left: 16px;
+  height: 27px;
+  width: 50px;
+  margin-top: 7px;
+}
+.home__cart {
+  position: fixed;
+  bottom: 0px;
+  margin-left: 0px;
+  width: 100%;
+  box-shadow: 1px 1px 8px 4px #c9c9c9;
+}
+.home__cart-trolley {
+  color: #8cbf00;
+  border-bottom: 2px solid #8cbf00;
+}
+.home__cart-trolley-paragraph {
+  margin-left: 10px;
+}
+.home__cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.home__cart-total-price {
+  margin-right: 10px;
+}
+.home__cart-products {
+  display: none;
+}
+.home__cart-price {
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .home {
+    display: flex;
+    padding: 30px;
+    margin-left: 50px;
+  }
+  .home__products {
+    max-width: 500px;
+  }
+  .home__products-name {
+    min-width: 300px;
+  }
+  .home__products-carting {
+    margin-top: 0px;
+  }
+  .home__cart {
+    min-width: 500px;
+    height: unset;
+    margin: auto;
+    position: unset;
+    bottom: unset;
+    width: unset;
+    margin-bottom: 650px;
+    margin-right: 120px;
+    border-radius: 3px;
+  }
+  .home__cart-trolley-paragraph {
+    margin-left: 10px;
+  }
+  .home__cart-products {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .home__cart-products-name {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .home__cart-products-img {
+    border: 1px solid #cccccc;
+    height: 60px;
+  }
+  .home__cart-products-img-image {
+    width: 80px;
+    height: 60px;
+  }
+  .home__cart-products-price {
+    margin-left: 200px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
